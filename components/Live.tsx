@@ -151,7 +151,7 @@ const Live = () => {
       onPointerUp={handlePointerUp}
       className="h-screen w-full flex justify-center items-center text-center "
     >
-      <h1 className="text-3xl text-white text-center">Hello World</h1>;
+      <canvas className="bg-white">hello</canvas>
       {reaction.map((reaction) => (
         <FlyingReaction
           key={reaction.timestamp.toString()}
