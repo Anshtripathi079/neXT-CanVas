@@ -12,6 +12,7 @@ import {
   handleCanvasObjectScaling,
   handleCanvasSelectionCreated,
   handleCanvaseMouseMove,
+  handlePathCreated,
   handleResize,
   initializeFabric,
   renderCanvas,
@@ -140,6 +141,13 @@ export default function Page() {
         selectedShapeRef,
         syncShapeInStorage,
         setActiveElement,
+      });
+    });
+
+    canvas.on("path:created", (options) => {
+      handlePathCreated({
+        options,
+        syncShapeInStorage,
       });
     });
 
