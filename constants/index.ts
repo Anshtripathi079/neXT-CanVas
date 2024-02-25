@@ -176,11 +176,11 @@ export const alignmentOptions = [
 ];
 
 export const shortcuts = [
-  {
-    key: "1",
-    name: "Chat",
-    shortcut: "/",
-  },
+  // {
+  //   key: "1",
+  //   name: "Chat",
+  //   shortcut: "/",
+  // },
   {
     key: "2",
     name: "Undo",
